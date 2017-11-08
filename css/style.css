@@ -454,6 +454,8 @@ strong{
 /* style galerii */
 
 .galeryImage{
+	height: 120px;
+	width: 180px;
 	border-radius: 15px; !important;
 	transition: all 0.3s ease-in-out;
 }
