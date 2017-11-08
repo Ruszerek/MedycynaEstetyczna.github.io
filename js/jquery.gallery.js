@@ -50,7 +50,6 @@
                 lNext_e = null;
 
         var redrawImage = function() {
-            //защита от первоначального вызова через window.resize
             if (l$CurrentImage) {
                 l$PrevImage && l$PrevImage.remove();
                 l$CurrentImage.appendTo(lImgInnerWrapper_jqp);
@@ -90,7 +89,6 @@
             var lCurrentImageLink_jqe = $(lElements_jqe[aId]);
             
             if (!l$CachedImages[aId]) {
-                //грузим изображение и вставляем в массив кешированных
                 var l$CachingImage = $('<img />');
                 l$CachingImage.attr("src", lCurrentImageLink_jqe.attr("href"));
                 l$CachingImage.on('load', function() {
