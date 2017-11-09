@@ -67,11 +67,11 @@ strong{
 	margin: 0px auto;
 	height: 80px;
 	display: block;
-	background-color: antiquewhite;
+	background-color: #ffeaf9;
 }
 #logo{
-	width: 280px;
-	height: 60px;
+	width: 25%;
+	height: 80%;
 	float: left;
 	display: inline-block;
 	padding: 5px 0px 0px 10px;
@@ -80,13 +80,14 @@ strong{
 #links{
 	list-style-type: none;
 	float: right;
+	width: 70%;
 }
 #links li{
 	display: inline-block;
 	width: 100px;
 	height: 55px;
 	margin: 15px 0px;
-	padding: 0px 10px;
+	padding: 0px 5px;
 	transition: all .1s ease-in-out;
 	border-right: 1px solid gray;
 }
@@ -102,20 +103,19 @@ strong{
 #links li a{
 	text-decoration: none;
 	font-family: "Poiret One", serif;
-	font-size: 1.2em;
+	font-size: 1em;
 	font-variant-caps: small-caps;
 	letter-spacing: 0.1em;
 	font-weight: 700;
 	transition: all .4s ease-in-out;
 }
 #links li:hover{
-	border-bottom: 3px solid #838680;
-	color: #838680;
-	background-color: bisque
+	border-bottom: 3px solid #fff2fb;
+	color: #F2E2E3;
+	text-transform: uppercase;
 }
 #links li a:hover{
 	color: #40a4a2;
-	font-size: 1.2em;
 }
 #mainImages{
 	margin-top: 0px;
