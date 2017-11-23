@@ -56,6 +56,9 @@ html{
 strong{
 	font-weight: bold;
 }
+a{
+	text-decoration: none;
+}
 
 /* end reset */ 
 
@@ -178,7 +181,6 @@ strong{
 	margin: 0px 0px 30px 30px;
 	font-weight: 900;
 	text-align: center;
-	order: 1;
 	padding-top: 30px;
 }
 .artHeader2{
@@ -238,18 +240,50 @@ strong{
 	box-sizing: border-box;
 	background-color: blue;
 	text-align: center;
-	min-width: 1000px;
+	min-width: 300px;
 	background-image: url('../images/background/main_background.jpg');
 	background-size:     cover;                      /* <------ */
     background-repeat:   no-repeat;
     background-position: center center;
+}
+.listaZabiegow{
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	align-content: center;
+}
+.paraCont{
+	margin-bottom: 1em;
+	margin-top: 0;
+	margin-left: 20px;
+	margin-right: 20px;
+	text-align: justify;
+	font-family: "Didact Gothic", serif;
 }
 .contLiItem{
 	margin-top: 15px;
 }
 .contLiItem li{
 	display:block;
-	margin-left: 20px;
+	margin: 0px 20px;
+	padding-top: 20px;
+	width: 300px;
+	font-family: "Didact Gothic", serif;
+	font-size: 1.3em;
+	text-align: left;
+	color: blueviolet;
+	transition: all .4s ease-in-out;
+}
+.contLiItem li:first-child{
+	padding-top: 0px;
+}
+.contLiItem li:hover{
+	margin-left: 35px;
+	font-weight: bold;
+}
+.contLiItem li a{
+	text-decoration: none;
+	color: blueviolet;
 }
 .contLiItem li:last-child{
 	margin-bottom: 20px;
@@ -315,7 +349,8 @@ strong{
 	width:220px;
 	height: auto;
 	background-color: rgba(196, 191, 191, 0.7);
-	font-family: "karla", serif;
+	font-family: "Didact Gothic", serif;
+	font-weight: bold;
 	margin: 10px 10px 10px 10px;
 	padding: 5px 10px 5px 0;
 	font-size: 1.2em;
@@ -329,7 +364,8 @@ strong{
 	margin: 10px 10px 0px 10px;
 	padding: 10px;
 	background-color: rgba(196, 191, 191, 0.7);
-	font-family: "Cormorant Garamond", serif;
+	font-family: "Didact Gothic", serif;
+	font-weight: bold;
 	border-radius: 0 0 20px 0;
 }
 .wiecej{
@@ -1031,7 +1067,6 @@ hr{
 	margin: 30px auto;
 	font-weight: 900;
 	text-align: center;
-	order: 1;
 }
 .blackText{
 	color: black;
