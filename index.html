@@ -2,8 +2,9 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width"/>
 	<title>Medycyna Estetyczna - Jaśkowice</title>
-	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Antic+Didone|Didact+Gothic|Cinzel|Cormorant+Garamond|Libre+Baskerville|Maitree|Old+Standard+TT|Poiret+One" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
@@ -20,7 +21,7 @@
 <body>
 
 	<section class="topBar thetop">
-			<a href="index.html"><img id="logo" src="images/logo.png"/></a>
+			<a href="sites/o_mnie.html"><img id="logo" src="images/logo.png"/></a>
 			<ul class="contIcons">
 				<li><a href="sites/kontakt.html"><img class="smallIccTopBar" src="images/home.png"></a></li>
 				<li><a href="sites/kontakt.html"><img class="smallIccTopBar"src="images/mail.png"></a></li>
@@ -30,10 +31,11 @@
 	
 	<nav class="nav">
 		<ul id="links">
+			<li class="linkItem"><a href="index.html">Strona Główna</a></li>
 			<li class="linkItem"><a href="sites/cennik.html">Cennik</a></li>
 			<li class="linkItem"><a href="sites/zabiegi.html">Zabiegi</a></li>
 			<li class="linkItem"><a href="sites/strefa_mezczyzn.html">Strefa Mężczyzn</a></li>
-			<li class="linkItem"><a href="sites/promocje.html">Promocje</a></li>
+			<li class="linkItem"><a href="sites/promocje_nowosci.html">Promocje</a></li>
 			<li class="linkItem"><a href="sites/kontakt.html">Kontakt</a></li>
 		</ul>
 	</nav>
@@ -42,7 +44,8 @@
 			<h1 class="mainHeaderHead">MEDYCYNA ESTETYCZNA</h1>
 			<hr>
 			<p class="mainHeaderCont">To nowoczesna gałąź medycyna stworzona przez francuskiego endokrynologa J.J.Legranda.</p>
-			<button class="mainHeaderButton"><a href="sites/kontakt.html">Umów się na konsultację</a></button>
+			<a class="mainHeaderButton" href="sites/kontakt.html">umów się na konsultację*</a>
+			<p class="mainHeaderCont small">*odpowiedź w ciągu 1h.</p>
 		</div>
 		<div class="mainMainImageRight">
 			<img class="mainImgRight" src="images/slideshow/face_PNG11753.png">
@@ -58,7 +61,7 @@
 				
 					<section class="artCont">
 						
-						<img class="artImage" src="images/pexels-photo-405239.jpeg" />
+						<img class="artImage" src="images/Gabinet.jpg" />
 										
 						<i><h2 class="artHeader2">"Piękno jest otwartym listem polecającym, który z góry zdobywa dla nas serca."</h2></i>
 						<p>
@@ -69,7 +72,8 @@
 		</section>
 	</div>
 	
-	<section class="fullWidthPart">		
+	<!-- sekcja ZAPOZNAJ SIĘ Z NASZA OFERTĄ 
+ 	<section class="fullWidthPart">		
 			<article>
 				<h1 class="artHead whiteText">Zapoznaj się z naszą ofertą</h1>
 			</article>
@@ -169,11 +173,28 @@
 		</section>
 	</section>
 	</section>
-
+-->
+			<iframe 
+				id="googleMap"
+  				width="100%"
+				min-width="900"
+  				height="450"
+  				frameborder="0" style="border:0" 
+				src="https://www.google.com/maps/embed/v1/place?key= AIzaSyCUjF7-R_Ges8OKs5T0A2Zu6ETctauHQX8 
+    			&q=NZOZ,Jaśkowice+Legnickie" allowfullscreen>
+			</iframe>
+	
+	<section class="fullWidthPart">
+		<h1 class="artHead white">Poznaj naszą ofertę</h1>
+			<p class="boxContentPara">
+				Medycyna estetyczna jest <strong>coraz prężniej rozwijająca się dziedzina medycyny.</strong> Wielu z nas czuje potrzebę poprawy swojego wyglądu i zniwelowania skutków nieuchronnie upływającego czasu. Na drodze do utrzymania zdrowego i młodego wyglądu, niejednokrotnie korzystamy z oferty medycznych zabiegów przeciwstarzeniowych. Szerokie możliwości i dostępny sprzęt pozwalają na osiągnięcie upragnionego efektu oraz zwiększenia swojej atrakcyjności.
+			</p>
+		<a class="styledAnchor" href="sites/zabiegi.html">...zobacz więcej</a>
+	</section>
 				<footer id="foot">
 						
 				<section class="footBox">
-					<img class="footBoxLogo" src="images/logo.png" alt="logo gabinetu">
+					<a href="sites/o_mnie.html"><img class="footBoxLogo" src="images/logo.png" alt="logo gabinetu"></a>
 					<img class="smallIcon" src="images/home.png" alt="adres">
 					<p>Jaśkowice Legnickie 37<br>
 					59-216 Kunice</p>
@@ -196,10 +217,10 @@
 				<section class="footBox">
 					<h6 class="footHead">Gabinet</h6>
 						<ul>
-							<li class="footList"><a href="sites/strefa_mezczyzn.html">Strefa mężczyzn</a></li>
-							<li class="footList"><a href="sites/certyfikaty.html">Certyfikaty</a></li>
+							<li class="footList"><a href="index.html">Strona główna</a></li>
+							<li class="footList"><a href="sites/o_mnie.html">O mnie</a></li>
 							<li class="footList"><a href="sites/zabiegi/zabiegi_lista.html">Oferta</a></li>
-							<li class="footList"><a href="sites/wspolpraca.html">Współpraca</a></li>
+							<li class="footList"><a href="sites/kontakt.html">Kontakt</a></li>
 						</ul>
 				</section>
 				
@@ -207,9 +228,9 @@
 					<h4 class="footHead">Oferta</h4>
 						<ul>
 							<li class="footList"><a href="sites/zabiegi.html">Zabiegi</a></li>
-							<li class="footList"><a href="sites/promocje.html">Promocje</a></li>
-							<li class="footList"><a href="sites/nowosci.html">Nowości</a></li>
+							<li class="footList"><a href="sites/promocje_nowosci.html">Promocje i nowości</a></li>
 							<li class="footList"><a href="sites/cennik.html">Cennik</a></li>
+							<li class="footList"><a href="sites/strefa_mezczyzn.html">Strefa mężczyzn</a></li>
 						</ul>
 				</section>
 				

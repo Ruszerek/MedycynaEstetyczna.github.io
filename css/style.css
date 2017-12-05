@@ -56,6 +56,9 @@ html{
 strong{
 	font-weight: bold;
 }
+a{
+	text-decoration: none;
+}
 
 /* end reset */ 
 
@@ -104,15 +107,16 @@ strong{
 #links{
 	list-style-type: none;
 	margin: 0 auto;
-	width: 1000px;
+	width: 100%;
 	
 }
 #links li{
 	display: inline-block;
-	width: 170px;
-	min-width: 150px;
+	width: 16%;
+	max-width: 140px;
 	height: 36px;
 	margin: 2px 0px;
+	font-size: 0.8em;
 	transition: all .1s ease-in-out;
 	border-right: 1px solid gray;
 }
@@ -151,13 +155,19 @@ strong{
 
 .wrapper{
 	width: 1200px;
-	min-width: 1000px;
+	min-width: 400px;
 	height: auto;
 	display: flex;
 	flex-direction: column;
 	margin: 0 auto;
 	background-color: white;
 }
+@media screen and (max-width:500px){
+	.wrapper{
+		width: 300px;
+		background-color: red;
+	}
+    }
 .colLeft{
 	order: 1;
 	width: 100%;
@@ -178,7 +188,6 @@ strong{
 	margin: 0px 0px 30px 30px;
 	font-weight: 900;
 	text-align: center;
-	order: 1;
 	padding-top: 30px;
 }
 .artHeader2{
@@ -238,18 +247,51 @@ strong{
 	box-sizing: border-box;
 	background-color: blue;
 	text-align: center;
-	min-width: 1000px;
+	min-width: 300px;
 	background-image: url('../images/background/main_background.jpg');
 	background-size:     cover;                      /* <------ */
     background-repeat:   no-repeat;
     background-position: center center;
+}
+.listaZabiegow{
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	align-content: center;
+}
+.paraCont{
+	margin-bottom: 1em;
+	margin-top: 0;
+	margin-left: 20px;
+	margin-right: 20px;
+	text-align: justify;
+	font-family: "Didact Gothic", serif;
 }
 .contLiItem{
 	margin-top: 15px;
 }
 .contLiItem li{
 	display:block;
-	margin-left: 20px;
+	margin: 0px 20px;
+	padding-top: 20px;
+	width: 300px;
+	font-family: "Didact Gothic", serif;
+	font-size: 1.3em;
+	text-align: left;
+	color: blueviolet;
+	transition: all .4s ease-in-out;
+}
+.contLiItem li:first-child{
+	padding-top: 0px;
+}
+
+.contLiItem li:hover{
+	margin-left: 35px;
+	font-weight: bold;
+}
+.contLiItem li a{
+	text-decoration: none;
+	color: blueviolet;
 }
 .contLiItem li:last-child{
 	margin-bottom: 20px;
@@ -315,7 +357,8 @@ strong{
 	width:220px;
 	height: auto;
 	background-color: rgba(196, 191, 191, 0.7);
-	font-family: "karla", serif;
+	font-family: "Didact Gothic", serif;
+	font-weight: bold;
 	margin: 10px 10px 10px 10px;
 	padding: 5px 10px 5px 0;
 	font-size: 1.2em;
@@ -329,7 +372,8 @@ strong{
 	margin: 10px 10px 0px 10px;
 	padding: 10px;
 	background-color: rgba(196, 191, 191, 0.7);
-	font-family: "Cormorant Garamond", serif;
+	font-family: "Didact Gothic", serif;
+	font-weight: bold;
 	border-radius: 0 0 20px 0;
 }
 .wiecej{
@@ -501,9 +545,12 @@ strong{
 	height: auto;
 	margin: 20px 0px 20px 0px; 
 	text-align: center;
+	table-layout:fixed; 
+
 }
 .cennik tbody tr{
 	height: auto;
+	width: auto;
 }
 .cennik tbody tr:nth-child(odd){
 	background-color: lightgray;
@@ -511,14 +558,15 @@ strong{
 .cennik tbody tr td{
 	font-family: "Maitree";
 	vertical-align: bottom;
+	
 }
 .tdLeft{
 	float: left;
 	text-align: left;
 	width: 700px;
 	min-width: 200px;
+	max-width: 2500px;
 	margin: 10px 0px 10px 20px; 
-	
 }
 .tdRight{
 	float: right;
@@ -527,6 +575,7 @@ strong{
 	min-width: 100px;
 	margin: 10px 10px 10px 0px; 
 	font-weight: bold;
+	word-wrap: break-all;
 }
 
 .smallHead{
@@ -556,11 +605,11 @@ strong{
 /* sekcja kontakt */ 
 
 .container {
-	max-width:292px;
-	width:100%;
-	margin:0 auto;
+	min-width:292px;
+	width: 100%;
+	margin: 0 auto;
 }
-
+/*
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "karla", serif; }
 
 #contact {
@@ -723,6 +772,10 @@ ul .contact:last-child{
 	margin-left: 30%;
 	text-align: left;
 }
+.small{
+	margin-top: 10px;
+	font-size: 0.7em;
+}
 .mainHeaderButton{
 	color: black;
 	margin-left: 30%;
@@ -733,9 +786,12 @@ ul .contact:last-child{
 	border: none;
 	cursor:pointer;
 }
-.mainHeaderButton a{
+.mainHeaderButton{
 	text-decoration: none;
 	color: black;
+	line-height: 1.7em;
+	font-size: 0.9em;
+	font-family: "Didact Gothic", serif;
 }
 hr{
 	width: 60px;
@@ -958,11 +1014,11 @@ hr{
 	background-size: cover;
 }
 #flipCard2{
-	background-image: url(../images/zabiegi_lista/water_face.png);
+	background-image: url(../images/zabiegi_lista/kwas.png);
 	background-size: cover;
 }
 #flipCard3{
-	background-image: url(../images/zabiegi_lista/dlonie.png);
+	background-image: url(../images/zabiegi_lista/osocze.png);
 	background-size: cover;
 }
 #flipCard4{
@@ -982,12 +1038,22 @@ hr{
 	background-size: cover;
 }
 #flipCard8{
-	background-image: url(../images/zabiegi_lista/oczy.png);
+	background-image: url(../images/zabiegi_lista/neuavia.png);
 	background-size: cover;
 }
 #flipCard9{
-	background-image: url(../images/zabiegi_lista/botoks.jpeg);
+	background-image: url(../images/zabiegi_lista/laser.png);
 	background-size: cover;
+}
+#flipCard10{
+	background-image: url(../images/zabiegi_lista/strefa_mezczyzn.png);
+	background-size: cover;
+}
+/* promo card */
+#promoCard1{
+	background-image: url(../images/promo/promo1.jpg);
+	background-size:contain;
+	background-repeat: no-repeat
 }
 
 /* koniec flipcard */ 
@@ -1024,6 +1090,7 @@ hr{
 .zabColRight{
 	box-sizing: border-box;
 	width: 300px;
+	margin-bottom: 30px;
 }
 .zabArtHead{
 	font-size: 1.8em;
@@ -1031,7 +1098,6 @@ hr{
 	margin: 30px auto;
 	font-weight: 900;
 	text-align: center;
-	order: 1;
 }
 .blackText{
 	color: black;
@@ -1119,3 +1185,51 @@ hr{
 	font-weight: bold;
 }
 
+/* o mnie style */
+.bulletList{
+	margin-left: 50px;
+	list-style-type: square;
+}
+
+.fullWidthPart{
+	width: 100%;
+	height: auto;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	background-image: url('../images/background/main_background.jpg');
+	background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+.white{
+	color: white;
+}
+.styledAnchor{
+	display: block;
+	line-height: 2.3em;
+	margin: 20px auto;
+	background-color: tomato;
+	height: 40px;
+	width: 200px;
+	text-align: center;
+	color: black;
+}
+.styledAnchor:hover{
+	background-color: darkred;
+}
+.boxContentPara{
+	text-align: left;
+	margin: 0 auto;
+	font-family: "Didact Gothic", serif;
+	width: 70%;
+	color: white;
+}
+.bottomSpace{
+	margin-bottom: 30px;
+}
+.red{
+	color: red
+}
+strong{
+	font-size: 1.2em;
+}
